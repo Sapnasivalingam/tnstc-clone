@@ -1,319 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TNSTC - Online Reservation</title>
-    <link rel="stylesheet" href="./tnstc.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TNSTC - Online Reservation</title>
+<link rel="stylesheet" href="./index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 </head>
-
 <body>
 
-    <div class="top-bar">
-        <div>
-            <p>For Reservation Complaints/Feedback/Refund:
-                <a href="#">ptcsotrs@gmail.com</a>
-                <a href="#">commercial@tnstc.org</a>
-                <a href="#">tnmlcsupport@billdesk.com</a>
-            </p>
-
-            <p>Other STU-specific Email IDs:
-                <a href="#">Click Here</a>
-            </p>
-        </div>
-
-        <div class="top-right">
-            <b>Book TTDC Tour Packages/Hotel Accommodation Click Here</b>
-            <span>|</span>
-            <a href="#">English</a>
-            <span>|</span>
-            <a href="#">தமிழ்</a>
-            <br>
-            <span class="date">◉ 22-09-2026 17:14:01</span>
-        </div>
+<!-- TOP BAR -->
+<div class="top-bar">
+  <div class="top-left">
+    <p>For Reservation Complaints/Feedback/Refund:
+      <a class="blink" href="#">ptcsotrs@gmail.com</a>
+      <a class="blink" href="#">commercial@tnstc.org</a>
+      <a class="blink" href="#">tnmlcsupport@billdesk.com</a>
+    </p>
+    <p>Other STU-specific Email IDs: <a class="blink" href="#">Click Here</a></p>
+  </div>
+  <div class="top-right">
+    <div>Book TTDC Tour Packages/Hotel Accommodation <a class="blink" href="https://ttdconline.com/">Click Here</a>
+      <span>|</span> <a href="#">English</a> <span>|</span> <a href="#">தமிழ்</a>
     </div>
+    <div class="date"><i class="fa-regular fa-clock"></i> 29-09-2026 18:59:15</div>
+  </div>
+</div>
 
+<!-- HEADER -->
+<header class="header">
+  <div class="header-inner">
+    <a class="logo-area" href="#">
+      <img src="./logo.png" alt="TNSTC Logo">
+      <div class="logo-text">
+        <h2>தமிழ்நாடு அரசு போக்குவரத்துக் கழகம்</h2>
+        <h3>Tamil Nadu State Transport Corporation Ltd.</h3>
+        <p>(A GOVERNMENT OF TAMIL NADU UNDERTAKING)</p>
+      </div>
+    </a>
+    <nav class="navbar">
+      <a href="./operator.html">Operator Login</a>
+      <a href="./hire.html">Hire a Bus</a>
+      <div class="nav-drop"><a href="#">TDR Filing <i class="fa-solid fa-angle-down"></i></a><div class="drop-menu"><a href="#">File TDR</a><a href="./tdr.html">TDR Status</a></div></div>
+      <div class="nav-drop"><a href="#">Track Ticket <i class="fa-solid fa-angle-down"></i></a><div class="drop-menu wide"><a href="./view.html">View Ticket</a><a href="./cancel.html">Cancel Ticket</a><a href="./status.html">Ticket Status</a><a href="./knowyour.html">Know Your Bus</a></div></div>
+      <a href="#">PG Refund Status</a>
+      <a href="#loginPopup" class="login-link">Login / Sign up <span class="user-circle"><i class="fa-solid fa-user"></i></span></a>
+    </nav>
+  </div>
+</header>
 
-    <!-- HEADER -->
-    <header>
+<!-- HERO / BOOKING -->
+<section class="hero">
+  <div class="warning-text">Proceeding with ticket booking to avoid transaction failures.</div>
+  <div class="hero-title">
+    <h1>Online Ticket Reservation System (OTRS)</h1>
+    <p>Send “Hi” or “வணக்கம்” on WhatsApp to <b>9444018898</b> for ticket booking.</p>
+  </div>
+  <div class="bus-image"></div>
 
-        <div class="logo-section">
-            <div ><img src="./logo.png" alt="logo" heigh="80" width="80"></div>
+  <div class="booking-tabs">
+    <div class="booking-tab active"><i class="fa-solid fa-bus"></i><span>Bus Booking</span></div>
+    <div class="booking-tab"><i class="fa-solid fa-suitcase"></i><span>Package Tour</span></div>
+  </div>
 
-            <div class="logo-text">
-                <h2>தமிழ்நாடு அரசு போக்குவரத்துக் கழகம்</h2>
-                <h3>Tamil Nadu State Transport Corporation Ltd.</h3>
-                <p>(A GOVERNMENT OF TAMIL NADU UNDERTAKING)</p>
-            </div>
-        </div>
-
-        <nav>
-            <a href="#">Operator Login</a>
-            <a href="#">Hire a Bus</a>
-            <a href="#">TDR Filing</a>
-            <a href="#">Track Ticket</a>
-            <a href="#">PG Refund Status</a>
-            <a href="#">Login / Sign up</a>
-            <span class="user"><i class="fa-solid fa-user-plus"></i></span>
-        </nav>
-
-    </header>
-
-
-    <!-- WARNING -->
-    <div class="warning">
-        Please ensure stable network connectivity before proceeding to avoid transaction failures.
+  <div class="booking-box">
+    <h2>Book Bus Tickets</h2>
+    <div class="booking-form">
+      <div class="field"><label>Source</label><div class="input-box"><input type="text" placeholder="From Place"><i class="fa-solid fa-location-dot"></i></div></div>
+      <div class="field"><label>Destination</label><div class="input-box"><input type="text" placeholder="To Place"><i class="fa-solid fa-location-dot"></i></div></div>
+      <div class="field date-field"><label>Onward</label><div class="input-box"><input type="text" placeholder="DD/MM/YYYY"><i class="fa-regular fa-calendar-days"></i></div></div>
+      <div class="field date-field"><label>Return</label><div class="input-box"><input type="text" placeholder="DD/MM/YYYY"><i class="fa-regular fa-calendar-days"></i></div></div>
+      <label class="lady"><input type="checkbox"><span>Single Lady</span></label>
     </div>
-
-
-    <!-- BOOKING SECTION -->
-    <section class="booking-area">
-        
-
-        <h1>Online Bus Ticket Reservation</h1>
-
-        <p>
-            Send "Hi" or "Hello" to book your ticket using WhatsApp.
-        </p>
-
-        <div class="booking-box">
-
-            <h2>Book Bus Tickets</h2>
-
-            <div class="form-row">
-
-                <div class="input-box">
-                    <label>Source</label>
-                    <input type="text" placeholder="From Place">
-                </div>
-
-                <div class="input-box">
-                    <label>Destination</label>
-                    <input type="text" placeholder="To Place">
-                </div>
-
-                <div class="input-box">
-                    <label>Onward</label>
-                    <input type="text" placeholder="DD/MM/YYYY">
-                </div>
-
-                <div class="input-box">
-                    <label>Return</label>
-                    <input type="text" placeholder="DD/MM/YYYY">
-                </div>
-
-                <div class="lady">
-                    <input type="checkbox">
-                    <span>Single Lady</span>
-                </div>
-
-            </div>
-
-            <button>Search Bus</button>
-
-        </div>
-
-    </section>
-
-
-    <!-- STATISTICS -->
-    <section class="statistics">
-
-        <div class="stat-card">
-            <div class="icon">♟</div>
-            <div>
-                <h3>Android Downloads</h3>
-                <p>29,09,647+</p>
-            </div>
-        </div>
-
-        <div class="stat-card">
-            <div class="icon">●</div>
-            <div>
-                <h3>iOS Downloads</h3>
-                <p>2,24,812+</p>
-            </div>
-        </div>
-
-        <div class="stat-card">
-            <div class="icon">▣</div>
-            <div>
-                <h3>Total Tickets</h3>
-                <p>256280820</p>
-            </div>
-        </div>
-
-    </section>
-
-
-    <!-- LATEST EVENTS -->
-    <section class="events">
-
-        <h2>Latest Events</h2>
-
-        <div class="event-container">
-
-            <div class="event-slider">
-
-                <div class="event-image">
-                    <h3>Online or Mobile ticket booking please ensure</h3>
-
-                    <p>
-                        whole transaction should be completed
-                        <br>
-                        within 7 minutes otherwise Seat might
-                        <br>
-                        have got released.
-                    </p>
-
-                    <div class="bus">🚌</div>
-                </div>
-
-                <div class="dots">
-                    <span></span>
-                    <span class="active"></span>
-                    <span></span>
-                    <span></span>
-                </div>
-
-            </div>
-
-
-            <div class="mobile-app">
-
-                <h2>tnstc.in Mobile Apps</h2>
-
-                <div class="phone">📱</div>
-
-                <div class="stores">
-                    <div>▶ Google Play</div>
-                    <div> App Store</div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- BUS TYPES -->
-    <section class="bus-types">
-
-        <div class="bus-list">
-
-            <h2>Bus Services</h2>
-
-            <div class="bus-row">
-                <span>1</span>
-                <a href="#">Ordinary Buses</a>
-                <b>PDF</b>
-            </div>
-
-            <div class="bus-row">
-                <span>2</span>
-                <a href="#">Express Buses</a>
-                <b>PDF</b>
-            </div>
-
-            <div class="bus-row">
-                <span>3</span>
-                <a href="#">Non AC Sleeper Buses</a>
-                <b>PDF</b>
-            </div>
-
-            <div class="bus-row">
-                <span>4</span>
-                <a href="#">Air Condition Buses</a>
-                <b>PDF</b>
-            </div>
-
-            <div class="bus-row">
-                <span>5</span>
-                <a href="#">Deluxe Buses</a>
-            </div>
-
-            <div class="bus-row">
-                <span>6</span>
-                <a href="#">Ultra Deluxe with Toilet Buses</a>
-            </div>
-
-            <div class="bus-row">
-                <span>7</span>
-                <a href="#">Ultra Deluxe Buses</a>
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- FOOTER -->
-    <footer>
-
-        <div class="footer-columns">
-
-            <div>
-                <h3>About Us</h3>
-                <hr>
-                <p>➜ Information</p>
-                <p>➜ Terms and Conditions</p>
-                <p>➜ Rules & Regulations</p>
-                <p>➜ Reservation Center</p>
-                <p>➜ Special Services</p>
-            </div>
-
-
-            <div>
-                <h3>Quick Links</h3>
-                <hr>
-                <p>➜ Counter Address</p>
-                <p>➜ Suggestions</p>
-                <p>➜ Compatible Browsers</p>
-                <p>➜ Browser Settings</p>
-            </div>
-
-
-            <div>
-                <h3>General Info</h3>
-                <hr>
-                <p>➜ FAQs</p>
-                <p>➜ Privacy Policy</p>
-                <p>➜ Site Map</p>
-                <p>➜ Contact Us</p>
-            </div>
-
-        </div>
-
-
-        <!-- FOOTER BOTTOM -->
-        <div class="footer-bottom">
-
-            <div>
-                <p>Online Reservation Toll Free Number:</p>
-                <strong>☎ 9513948001</strong>
-            </div>
-
-            <div>
-                <p>Bank Queries-Billdesk / Helpdesk:</p>
-                <strong>☎ 044-49076316 / 49076326</strong>
-            </div>
-
-            <div>
-                <p>Powered by: www.radiantinfo.com</p>
-                <strong>RADIENT</strong>
-            </div>
-
-        </div>
-
-        <p class="copyright">
-            © TNSTC. All Rights Reserved.
-            <br>
-            Ver:11062024-2240
-        </p>
-
-    </footer>
-
+    <button class="search-button">Search Bus</button>
+  </div>
+</section>
+
+<!-- DESTINATIONS CAROUSEL -->
+<section class="destinations">
+  <div class="destination-top">
+    <h2>Top Destinations</h2>
+    <div class="tdfc-banner">
+      <div class="tdfc-logo">TDFC</div>
+      <div class="tdfc-content"><img src="./banner.jpg" alt=""></div>
+    </div>
+  </div>
+  <div class="destination-carousel">
+    <button class="arrow left" aria-label="Previous"><i class="fa-solid fa-chevron-left"></i></button>
+    <div class="destination-window"><div class="destination-track">
+      <article class="destination-card"><img src="./kanyakumari.jpg" alt="Kanyakumari"><div class="destination-content"><h3>Kanyakumari</h3><p>Kanyakumari is a coastal town in the state of Tamil Nadu on India's southern tip. Jutting into the Laccadive Sea, the town was known as Cape Comorin during British rule and is popular for watching sunrise...</p></div></article>
+      <article class="destination-card"><img src="./chenai.jpg" alt="Chennai"><div class="destination-content"><h3>Chennai</h3><p>Chennai, formerly known as Madras, is the capital city of Tamil Nadu, the southern most state of India. It is the state's primary city and is located on the Coromandel Coast of the Bay of Bengal.</p></div></article>
+      <article class="destination-card"><img src="./bengaluru.jpg" alt="Bengaluru"><div class="destination-content"><h3>Bengaluru</h3><p>Bengaluru is the capital of India's southern Karnataka state. The center of India's high-tech industry, the city is also known for its parks and nightlife.</p></div></article>
+      <article class="destination-card"><img src="./kumbakonam.jpg" alt="Kumbakonam"><div class="destination-content"><h3>Kumbakonam</h3><p>Kumbakonam is a city municipal corporation in the Thanjavur district in the Indian state of Tamil Nadu. It is located 40 km from Thanjavur and 282 km from Chennai.</p></div></article>
+      <article class="destination-card"><img src="./tirupati.jpg" alt="Tirupati"><div class="destination-content"><h3>Tirupati</h3><p>Tirupati is a city in the Indian state of Andhra Pradesh. The city is home to the important Hindu shrine of Tirumala Venkateshwara Temple.</p></div></article>
+      <article class="destination-card"><img src="./thiruvanamalai.jpg" alt="Thiruvannamalai"><div class="destination-content"><h3>Thiruvannamalai</h3><p>Tiruvannamalai is a city and the administrative headquarters of Tiruvannamalai District. It is a Hindu pilgrimage center, famous for the Arulmigu Annamalaiyar Temple and Arunachala Hill.</p></div></article>
+      <article class="destination-card"><img src="./madurai.jpg" alt="Madurai"><div class="destination-content"><h3>Madurai</h3><p>Madurai is a historic Hindu temple city located on the southern bank of the Vaigai River in Tamil Nadu, India. It is dedicated to the goddess Meenakshi.</p></div></article>
+    </div></div>
+    <button class="arrow right" aria-label="Next"><i class="fa-solid fa-chevron-right"></i></button>
+  </div>
+</section>
+
+<!-- NUMBERS -->
+<section class="numbers">
+  <h2>Our Growing Numbers</h2>
+  <div class="number-container">
+    <div class="number-card"><div class="number-icon android"><i class="fa-brands fa-android"></i></div><div><span>Downloaded</span><strong>29,09,647+</strong></div></div>
+    <div class="number-card"><div class="number-icon apple"><i class="fa-brands fa-apple"></i></div><div><span>Downloaded</span><strong>2,24,812+</strong></div></div>
+    <div class="number-card"><div class="number-icon visitors"><i class="fa-solid fa-bus"></i></div><div><span>Visitors</span><strong>256280863</strong></div></div>
+  </div>
+</section>
+
+<!-- SECOND CAROUSEL / EVENTS -->
+<section class="latest-events">
+  <div class="content-width">
+    <h2>Latest Events</h2>
+    <div class="events-wrapper">
+      <div class="event-slider">
+        <div class="event-window"><div class="event-track">
+          <div class="event-slide"><img src="./imAGE1.jpg" alt="Latest event"></div>
+          <div class="event-slide"><img src="./imAGE1.jpg" alt="Latest event"></div>
+          <div class="event-slide"><img src="./imAGE1.jpg" alt="Latest event"></div>
+          <div class="event-slide"><img src="./imAGE1.jpg" alt="Latest event"></div>
+        </div></div>
+        <div class="event-dots"><button class="active"></button><button></button><button></button><button></button></div>
+      </div>
+      <div class="mobile-app"><img src="./mobile.jpg" alt="tnstc.in Mobile Apps"></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-column"><h3>About Us</h3><div class="footer-line"></div><a href="#">› About Us</a><a href="#">› Information</a><a href="#">› Rules &amp; Regulations</a><a href="#">› Reservation Center</a><a href="#">› Special Services</a></div>
+    <div class="footer-column"><h3>Quick Links</h3><div class="footer-line"></div><a href="#">› Counter Address</a><a href="#">› Suggestions</a><a href="#">› Compatible Browsers</a><a href="#">› Browser Settings</a><a href="#">› Terms And Conditions</a></div>
+    <div class="footer-column"><h3>General Info</h3><div class="footer-line"></div><a href="#">› FAQs</a><a href="#">› Privacy Policy</a><a href="#">› Site Map</a><a href="#">› Contact Us</a><a href="#">› Feed Back</a><a href="#">› Services</a><a href="#">› User Manual - Online Ticket Booking &amp; Cancellation</a></div>
+  </div>
+</footer>
+
+<!-- CONTACT -->
+<section class="contact-section">
+  <div class="contact-table">
+    <P class="blink" >CONTACT DETAILS:</P>
+    <div>
+    <div class="contact-row"><div class="contact-heading"><i class="fa-solid fa-bus"></i>Online Reservation Toll Free Number</div><div></div><div class="contact-number"><i class="fa-solid fa-phone"></i>7825812626 / 9513948001</div><div class="contact-email">commercial@tnstc.org</div></div>
+    <div class="contact-row"><div class="contact-heading"><i class="fa-solid fa-building-columns"></i>Bank Queries &amp; Amount Refund Enquiries</div><div>Billdesk (Payment gateway)</div><div class="contact-number"><i class="fa-solid fa-phone"></i>044-49076316 / 044-49076326 / 044-49076305</div><div class="contact-email">tnmlcsupport@billdesk.com</div></div>
+    <div class="contact-row"><div class="contact-heading"><i class="fa-solid fa-comments"></i>Complaints &amp; Suggestions</div><div>SETC / TNMLC</div><div class="contact-number whatsapp"><i class="fa-brands fa-whatsapp"></i>Whatsapp Number: 9445014448</div><div class="contact-email">setccomm1@yahoo.com<br>ptcsotrs@gmail.com</div></div>
+  </div>
+  <div class="bottom-area"><div class="powered"><div class="radiant">R</div><span>Powered by: 
+    <a href="#">www.radiantinfo.com</a></span></div><div class="copyright">© TNSTC. All Rights Reserved.<br>Ver:28092026-2200</div></div></div>
+</section>
+
+<a href="#" class="scroll-top"><i class="fa-solid fa-chevron-up"></i></a>
+
+<!-- LOGIN / SIGNUP POPUP -->
+<div id="loginPopup" class="popup">
+  <div class="popup-box">
+    <input type="radio" name="account" id="login" checked>
+    <input type="radio" name="account" id="signup">
+    <div class="popup-header"><div class="popup-tabs"><label for="login">Login</label><label for="signup">Sign Up</label></div><a href="#" class="close">×</a></div>
+    <div class="login-form"><input type="email" placeholder="Email ID"><input type="password" placeholder="Password"><div class="login-options"><label><input type="checkbox"> Remember Me</label><a href="#">Forgot Password?</a></div><button>Login</button></div>
+    <div class="signup-form"><input type="email" placeholder="Email ID"><input type="text" placeholder="Mobile Number"><input type="text" placeholder="User Full Name"><input type="password" placeholder="Password"><label class="terms"><input type="checkbox" checked> I agree to the Terms Of Service</label><button>Sign up</button></div>
+  </div>
+</div>
+
+<script>
+const destinationTrack=document.querySelector('.destination-track');
+const destinationCards=document.querySelectorAll('.destination-card');
+const destinationNext=document.querySelector('.destination-carousel .right');
+const destinationPrev=document.querySelector('.destination-carousel .left');
+let destinationIndex=0;
+function destinationVisible(){return innerWidth<=600?1:innerWidth<=1000?2:4;}
+function destinationMove(){destinationTrack.style.transform=`translateX(-${destinationIndex*(100/destinationVisible())}%)`;}
+function destinationNextMove(){const v=destinationVisible();destinationIndex=destinationIndex>=destinationCards.length-v?0:destinationIndex+1;destinationMove();}
+function destinationPrevMove(){const v=destinationVisible();destinationIndex=destinationIndex<=0?destinationCards.length-v:destinationIndex-1;destinationMove();}
+destinationNext.addEventListener('click',destinationNextMove);destinationPrev.addEventListener('click',destinationPrevMove);setInterval(destinationNextMove,4000);addEventListener('resize',()=>{destinationIndex=0;destinationMove();});
+
+const eventTrack=document.querySelector('.event-track');
+const eventDots=[...document.querySelectorAll('.event-dots button')];
+let eventIndex=0;
+function eventMove(i){eventIndex=i;eventTrack.style.transform=`translateX(-${i*25}%)`;eventDots.forEach((d,n)=>d.classList.toggle('active',n===i));}
+eventDots.forEach((d,i)=>d.addEventListener('click',()=>eventMove(i)));setInterval(()=>eventMove((eventIndex+1)%4),5000);
+</script>
 </body>
 </html>

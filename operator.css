@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.page {
+    width: 85%;
+    height: 800px;
+    margin: 0 auto;
+    border-left: 2px solid #632817;
+    border-right: 2px solid #632817;
+    position: relative;
+}
+
+
+header {
+    height: 180px;
+    background: #fff3ee;
+    border-top: 24px solid #632817;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    position: relative;
+}
+
+
+
+
+.left-bus,
+.right-bus {
+    width: 160px;
+    height: auto;
+}
+
+.left-bus {
+    margin-left: 20px;
+}
+
+.right-bus {
+    margin-right: 20px;
+}
+
+
+
+.logo-area {
+    text-align: center;
+}
+
+.logo {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.logo-area h2 {
+    font-size: 21px;
+    font-weight: normal;
+    margin-top: -5px;
+}
+
+.logo-area h3 {
+    color: #a00000;
+    font-size: 19px;
+    margin-top: 3px;
+}
+
+.logo-area p {
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 1px;
+}
+
+
+
+.title-bar {
+    height: 25px;
+    background: #632817;
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+   
+    padding: 4px 2px;
+}
+
+
+/* MAIN */
+
+main {
+    min-height: 690px;
+    position: relative;
+}
+
+
+/* LOGIN BOX */
+
+.login-box {
+    width: 58%;
+    margin: 35px auto 0;
+}
+
+
+/* LOGIN TITLE */
+
+.login-title {
+    width: 350px;
+    height: 25px;
+
+    background: #632817;
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    padding: 4px 10px;
+
+    position: relative;
+}
+
+
+/* TRIANGLE */
+
+.login-title::after {
+    content: "";
+    position: absolute;
+
+    right: -25px;
+    top: 0;
+
+    width: 0;
+    height: 0;
+
+    border-top: 25px solid #632817;
+    border-right: 25px solid transparent;
+}
+
+
+/* INPUT ROW */
+
+.input-row {
+    height: 32px;
+
+    background: #f9e9e4;
+
+    display: flex;
+    align-items: center;
+}
+
+.input-row:nth-child(3) {
+    background: #f9e9e4;
+}
+
+.input-row label {
+    width: 52%;
+    text-align: right;
+
+    padding-right: 5px;
+
+    font-size: 14px;
+}
+
+.input-row input {
+    width: 210px;
+    height: 27px;
+
+    border: 1px solid #999;
+}
+
+
+/* BUTTONS */
+
+.buttons {
+    text-align: center;
+    margin-top: 34px;
+}
+
+.buttons button {
+    font-size: 16px;
+    padding: 3px 9px;
+    margin: 0 2px;
+
+    cursor: pointer;
+}
+
+
+/* FOOTER */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* POWERED */
+
+.powered {
+    height: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5px;
+
+    font-size: 12px;
+    color: #777;
+}
+
+
+/* BOTTOM BAR */
+
+.bottom-bar {
+    height: 24px;
+
+    background: #632817;
+
+    color: white;
+
+    text-align: right;
+
+    padding-right: 5px;
+
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.bottom-bar a {
+    color: white;
+}

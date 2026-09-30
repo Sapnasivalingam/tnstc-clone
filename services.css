@@ -1,0 +1,527 @@
+/* ============================= */
+/* RESET */
+/* ============================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #f4f5f7;
+
+    color: #40505c;
+}
+
+
+
+header {
+    height: 106px;
+
+    background: white;
+}
+
+
+.header-container {
+    width: 75%;
+
+    height: 100%;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+.logo-section{
+    display:flex;
+}
+
+
+.logo-section img {
+    width: 100px;
+
+    height: 80px;
+
+    display: flex;
+}
+
+
+
+nav {
+    display: flex;
+
+    align-items: center;
+
+    gap: 27px;
+}
+
+
+nav a {
+    color: #0873a8;
+
+    text-decoration: none;
+
+    font-size: 16px;
+}
+
+
+nav a:hover {
+    color: #07527c;
+}
+
+
+.page-title {
+    height: 74px;
+
+    background: #12385d;
+}
+
+
+.title-container {
+    width: 75%;
+
+    height: 74px;
+
+    margin: auto;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+.title-container h1 {
+    color: white;
+
+    font-size: 29px;
+
+    font-weight: normal;
+}
+
+main {
+    padding: 34px 0 45px;
+}
+
+
+.main-container {
+    width: 75%;
+
+    margin: auto;
+
+    display: flex;
+
+    gap: 35px;
+
+    align-items: flex-start;
+}
+
+
+
+.content-box {
+    width: 72%;
+
+    background: white;
+
+    padding: 28px;
+
+    border-radius: 3px;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+
+.content-box h2 {
+    color: #173b59;
+
+    font-size: 23px;
+
+    font-weight: normal;
+
+    margin-bottom: 14px;
+}
+
+
+.line {
+    height: 1px;
+
+    width: 100%;
+
+    background: #ddd;
+
+    margin-bottom: 10px;
+}
+
+
+
+.service-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    font-size: 16px;
+}
+
+
+.service-table th {
+    height: 42px;
+
+    text-align: left;
+
+    color: #46545d;
+
+    padding: 10px 13px;
+
+    border-bottom: 1px solid #ddd;
+
+    background: white;
+}
+
+
+.service-table th:first-child {
+    width: 60px;
+}
+
+
+.service-table th:last-child {
+    width: 90px;
+
+    text-align: center;
+}
+
+
+.service-table td {
+    height: 56px;
+
+    padding: 16px 13px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* ALTERNATE ROWS */
+
+.service-table tbody tr:nth-child(odd) {
+    background: #eeeeee;
+}
+
+
+.service-table tbody tr:nth-child(even) {
+    background: white;
+}
+
+
+/* SERVICE LINKS */
+
+.service-table td a {
+    color: #176d9e;
+
+    text-decoration: none;
+}
+
+
+.service-table td a:hover {
+    text-decoration: underline;
+}
+
+
+.pdf {
+    text-align: center;
+}
+
+
+.pdf a {
+    display: inline-flex;
+
+    width: 29px;
+
+    height: 35px;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #ed1c24;
+
+    color: white !important;
+
+    border-radius: 3px;
+
+    font-size: 8px;
+
+    font-weight: bold;
+
+    text-decoration: none !important;
+
+    position: relative;
+}
+
+
+.pdf a::after {
+    content: "PDF";
+
+    position: absolute;
+
+    bottom: 3px;
+
+    left: 0;
+
+    right: 0;
+
+    font-size: 8px;
+}
+
+
+
+aside {
+    width: 28%;
+}
+
+
+.app-box {
+    background: white;
+
+    padding: 12px;
+
+    border-radius: 3px;
+
+}
+
+
+.app-box img {
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+}
+
+
+
+footer {
+    background: #087bc1;
+
+    color: white;
+}
+
+
+
+.footer-links {
+    width: 75%;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 27px 0 50px;
+}
+
+
+.footer-column {
+    width: 30%;
+}
+
+
+.footer-column h3 {
+    font-size: 17px;
+
+    margin-bottom: 10px;
+}
+
+
+.footer-column hr {
+    width: 162px;
+
+    border: none;
+
+    border-top: 1px solid rgba(255,255,255,0.7);
+
+    margin-bottom: 14px;
+}
+
+
+.footer-column p {
+    font-size: 15px;
+
+    margin: 9px 0;
+}
+
+
+/* ============================= */
+/* FOOTER BOTTOM */
+/* ============================= */
+
+.footer-bottom {
+    background: white;
+
+    color: #333;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    text-align: center;
+
+    padding: 27px 20%;
+
+    border-top: 1px solid #ddd;
+}
+
+
+.footer-bottom p {
+    margin-bottom: 10px;
+}
+
+
+.footer-bottom strong {
+    color: #a00000;
+
+    font-size: 17px;
+}
+
+
+/* ============================= */
+/* COPYRIGHT */
+/* ============================= */
+
+.copyright {
+    background: white;
+
+    color: #777;
+
+    text-align: center;
+
+    padding: 12px;
+
+    font-size: 15px;
+}
+
+
+/* ============================= */
+/* TABLET */
+/* ============================= */
+
+@media (max-width: 900px) {
+
+    .header-container {
+        width: 90%;
+    }
+
+    .logo-section img {
+        width: 330px;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .main-container {
+        width: 90%;
+
+        flex-direction: column;
+    }
+
+    .content-box,
+    aside {
+        width: 100%;
+    }
+
+    .footer-links {
+        width: 90%;
+
+        flex-wrap: wrap;
+
+        gap: 30px;
+    }
+
+    .footer-column {
+        width: 45%;
+    }
+
+    .footer-bottom {
+        padding: 25px 5%;
+
+        gap: 20px;
+    }
+
+}
+
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width: 600px) {
+
+    header {
+        height: auto;
+    }
+
+    .header-container {
+        flex-direction: column;
+
+        padding: 15px 0;
+
+        gap: 15px;
+    }
+    .logo-section{
+        display:flex;
+    }
+    .logo-section img {
+        width: 100px;
+        height:80px;
+        object-fit: contain;
+    }
+
+    nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    .title-container {
+        width: 90%;
+    }
+
+    .title-container h1 {
+        font-size: 23px;
+    }
+
+    .main-container {
+        width: 92%;
+    }
+
+    .content-box {
+        padding: 18px;
+    }
+
+    .service-table {
+        font-size: 13px;
+    }
+
+    .service-table td {
+        padding: 12px 7px;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+
+}
